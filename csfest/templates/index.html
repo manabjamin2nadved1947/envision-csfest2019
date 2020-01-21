@@ -26,6 +26,9 @@
     opacity: .8;
     padding-left: 10px;
     }
+    .test .test-user{
+      color:white;
+    }
    .Slides i{
     display: inline-block; 
     size: 70px;
@@ -149,10 +152,13 @@
   <div class="test">
 
     {% if user.is_authenticated %}
-          <p><strong style=" color: white;  font-size: 20px;">User:</strong> {{ user.get_username }}</p>
+    <div class="test-user">
+      <p><strong style=" color: white;  font-size: 20px;">User:</strong> {{ user.get_username }}</p>
            {% if user.participant.pk %}
             <h1> welcome!!!</h1>
             <h2>{{user.get_username}}</h2>
+    </div>
+          
 
 
 

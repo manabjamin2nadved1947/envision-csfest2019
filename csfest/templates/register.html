@@ -2,6 +2,7 @@
 
 
 {% block content %}
+<link href="https://fonts.googleapis.com/css?family=Amarante&display=swap" rel="stylesheet">
 <style >
 .glow {
   font-size: 40px;
@@ -20,18 +21,16 @@
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-.register{
-	
 }
 
 
 
 </style>
-	<div class="register" style="background: linear-gradient(-65deg,#663300,#94383d, #ffbf80,#ffaa80,#b36565,#5c5c8a,#1f3d7a,#002266,#212145,#000028); min-width:100%;
-    height: 650px;
-     color: white; text-shadow: 2px 2px black; padding-left: 10px;">
+	<div style="background-image: url('https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-0/p180x540/82283714_113252373541946_2565982448118661120_o.jpg?_nc_cat=107&_nc_oc=AQmdQLOJ4842AOiISGCpEpGCBY_TWZfxYbxQEPYiN-OhpOM_Hi-n8RRvMKeZt7Ae6EM&_nc_ht=scontent.fccu10-1.fna&_nc_tp=1002&oh=16e3ad57170e5e2eb72648bc562611f5&oe=5EA16206');
+    height: 650px; width: 100; background-repeat: no-repeat; background-size: cover; color: aliceblue;>
+     color: white; text-shadow: 2px 2px black; padding-left: 10px;font-family: 'Amarante', cursive;">
 		{% if messages %}
-			<ul>
+			<ul style="padding-bottom:10px;">
 				{% for message in messages %}
 				<li>
 					{{ message }}
@@ -40,7 +39,7 @@
 			</ul> 
 			{% endif %}
 
-			<h1>Create account for CSFEST 2020</h1>
+			<h1 style="padding-bottom: 10px;"><u>Create account for ENVISION T20<u></h1>
 
 			<form method="post">
 				{% csrf_token %}
@@ -48,7 +47,7 @@
 					{{ form.as_table }}
 					<tr>
 						<td></td>
-						<td style=""><input type="submit" name="submit" value="Register"/></td>
+						<td style=" padding-bottom: 10px;"><input type="submit" name="submit" value="Register"/></td>
 					</tr>
 				</table>
 			</form>

@@ -2,12 +2,26 @@
 
 {% block content %}
 <style>
+	.bg
+	{
+		background-image: url('https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-9/s960x960/82250695_112794310254419_160677440962691072_o.png?_nc_cat=110&_nc_oc=AQn79BfvFqqaWl4sWLcxXrzdo_KBbqMGyZtMXssRleKa8HUBr_3ZHfs_fZn3XupYNCg&_nc_ht=scontent.fccu10-1.fna&oh=d27dad953d0464e42c752c95ef305e15&oe=5ED59843');
+		opacity: 0.95;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 650px;
+		width:  100%;
+		color: aliceblue;
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-bottom: 50px;
+	}
 	.p-form ul{
 		list-style-type: none;
+		
 	}
 </style>
 
-
+<div class="bg">
 <div class="p-form">
 	<form action="" method="post">
 		{% csrf_token %}
@@ -20,5 +34,6 @@
 		<input type="submit" name="" value="Submit">
 		{%endif%}
 	</form>
+</div>
 </div>
 {% endblock %}
