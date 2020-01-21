@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<style>
+.profile {
+ margin-left: 40px;	
+}
+ul li{
+  margin-left: 20px;
+}
+</style>
+
+<div class="profile">
+
+  <h1>MY PROFILE</h1>
+
+  <p><strong>User :</strong> {{ participant.user }}</p>
+  <p><strong> Name:</strong>{{ participant.first_name }} {{participant.last_name}}</p>
+   <p><strong>College :</strong> {{ participant.college }}</p>
+  <p><strong>Email :</strong> {{ participant.email }}</p>
+  <p><strong>Events participated :</strong></p>
+  <ul>
+    {% for event in participant.events_participate.all %}
+      <li>
+        <a href="{{ event.get_absolute_url }}">{{ event.name }}</a> 
+    
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+ {% endblock %}  
