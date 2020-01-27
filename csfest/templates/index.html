@@ -60,9 +60,9 @@
 
 .fades{
   -webkit-animation-name: fades;
-  -webkit-animation-duration: 12.0s;
+  -webkit-animation-duration: 6.0s;
   animation-name: fades;
-  animation-duration: 12.0s;
+  animation-duration: 6.0s;
   }
 
 @-webkit-keyframes fades {
@@ -105,47 +105,6 @@
 
  
 
-  /*.prev {
-  
-  cursor: pointer;
-  position: absolute;
-  left: 23%;
-  top: 10%;
-
-  padding: 16px;
-  /*margin-top: -22px;*/
-  /*color: blue;*/
-  /*font-weight: bold;
-  font-size: 18px;
-  /*transition: 0.6s ease;*/
- /* border-radius: 0 3px 3px 0;
-  user-select: none;
-  border-radius: 0 3px 3px 0;
-}*/
-
-/*.next {
-  position: absolute;
-  right: 23.3%;
-  top: 10%;
-  /*float: right;*/
-  /*border-radius: 3px 0 0 3px;
-  cursor: pointer;
-  color: blue;
-  font-weight: bold;
-  border-radius: 0 3px 3px 0;
-  padding: 16px;
-  /*position: absolute;
-  top: 30%;
-  width:100%;
-  padding: 16px;
-  margin-top: -22px;
-  
-  
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;*/
-/*}*/
  </style>
  
   
@@ -193,9 +152,9 @@
         <i><img src="https://img.icons8.com/dusk/64/000000/training.png"><br>seminar</i>
         <i><img src="https://img.icons8.com/bubbles/64/000000/angry-face-meme.png"><br>...and</i>
         <br>
-        <a href="{% url 'events'%}"  style="float: right; padding-right: 20px; font-size: 40px; color:red;">many more</a>
+        <a href="{% url 'events'%}"  style="float: right; padding-right: 20px; font-size: 40px; color:red; font-family:'Vidaloka',serif">many more</a>
        
-      <center><ul><a href="{% url 'register' %}" class="text-danger bg-warning glow"><em> <h1 class="text-danger" style="padding-top: 100px;"> Register</h1></em></a></ul>
+      <center><ul><a href="{% url 'register' %}" class="text-danger bg-warning glow"><h1 class="text-danger" style="padding-top: 100px; text-transform: uppercase; font-family: 'Alice', serif;"> Register</h1></a></ul>
       </center>
        </div>
 
@@ -244,7 +203,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 1000); // Change image every 1 seconds
+  setTimeout(carousel, 3000); // Change image every 1 seconds
 }
 
 
