@@ -127,7 +127,7 @@
     <ul><strong>number  of participants :</strong> {{ num_participants }}</ul>
           <p><h2>Staff page</h2></p>
            {% else %}
-           <p><a href="{% url 'participant_create'%}" class="text-success bg-warning"><strong>PLEASE CREATE YOUR PROFILE TO JOIN THE FEST</strong></a></p>
+           <h2><a href="{% url 'participant_create'%}" class="text-danger bg-warning"><strong>PLEASE CREATE YOUR PROFILE TO JOIN THE FEST</strong></a></h2>
            
            {% endif %}
       {% else %}

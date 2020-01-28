@@ -1,6 +1,8 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<link href="https://fonts.googleapis.com/css?family=Amarante&display=swap" rel="stylesheet">
+
 <style>
 	.bg
 	{
@@ -14,6 +16,7 @@
 		padding-top: 50px;
 		padding-left: 50px;
 		padding-bottom: 50px;
+		font-family: 'Amarante', cursive;
 	}
 	.p-form ul{
 		list-style-type: none;
@@ -35,5 +38,7 @@
 		{%endif%}
 	</form>
 </div>
+<br><br>
+<h5 class="text-danger" style="font-weight: bold; font-size: 20px;"><span style="text-transform: uppercase;" class="text-success">**Please recheck your profile after submitting.</span> <br>If your events participated does not show anything, please update it in update profile.</h5>
 </div>
 {% endblock %}

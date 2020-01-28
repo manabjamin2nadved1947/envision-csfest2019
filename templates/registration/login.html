@@ -1,15 +1,21 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<link href="https://fonts.googleapis.com/css?family=Amarante&display=swap" rel="stylesheet">
+
 <style >
+  .login{
+    font-family: 'Amarante', cursive;
+  }
   .button{
     margin-left: 77px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
   td{
-    color: black;
-text-shadow: 2px 2px pink;  
+    color: white;
+  text-transform: uppercase;
+  font-weight: 30px;
 }
   form{
     margin-top: 0px;
@@ -19,7 +25,7 @@ text-shadow: 2px 2px pink;
   }
 </style>
 
-<div style="background-image: url('https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-0/p180x540/82228206_113251600208690_5554643502693875712_o.png?_nc_cat=108&_nc_oc=AQmlghdrkbYStc4VkLmj7CZFHG7LOFjSymDlR8Z7WfoqLhGvbRL7ZRynqAop6kB7oCg&_nc_ht=scontent.fccu10-1.fna&oh=bcf5bcd87c93e9b8aadaa4e3ed5ec8f0&oe=5E9CE2B8'); height: 650px; width: 100%; opacity:.95 ; background-size: cover; background-repeat: no-repeat;">
+<div class="login" style="background-image: url('https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-0/p180x540/82228206_113251600208690_5554643502693875712_o.png?_nc_cat=108&_nc_oc=AQmlghdrkbYStc4VkLmj7CZFHG7LOFjSymDlR8Z7WfoqLhGvbRL7ZRynqAop6kB7oCg&_nc_ht=scontent.fccu10-1.fna&oh=bcf5bcd87c93e9b8aadaa4e3ed5ec8f0&oe=5E9CE2B8'); height: 650px; width: 100%; opacity:.95 ; background-size: cover; background-repeat: no-repeat;">
 <center>
 {% if form.errors %}
   <p>Your username and password didn't match. Please try again.</p>
